@@ -1,0 +1,1464 @@
+{
+    "year": 2024,
+    "date_updated": "2024-06-02T22:16:38.35983942Z",
+    "games": [
+        {
+            "year": 2024,
+            "week": 1,
+            "game_id": "2024001",
+            "date_start": "2024-06-07T00:30:00Z",
+            "game_number": 1,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 1,
+            "game_id": "2024002",
+            "date_start": "2024-06-08T01:00:00Z",
+            "game_number": 2,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 1,
+            "game_id": "2024003",
+            "date_start": "2024-06-08T23:00:00Z",
+            "game_number": 3,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 1,
+            "game_id": "2024004",
+            "date_start": "2024-06-09T23:00:00Z",
+            "game_number": 4,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 2,
+            "game_id": "2024005",
+            "date_start": "2024-06-13T23:30:00Z",
+            "game_number": 5,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 2,
+            "game_id": "2024006",
+            "date_start": "2024-06-15T01:00:00Z",
+            "game_number": 6,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 2,
+            "game_id": "2024007",
+            "date_start": "2024-06-15T23:00:00Z",
+            "game_number": 7,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 2,
+            "game_id": "2024008",
+            "date_start": "2024-06-16T23:00:00Z",
+            "game_number": 8,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 3,
+            "game_id": "2024009",
+            "date_start": "2024-06-20T23:30:00Z",
+            "game_number": 9,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 3,
+            "game_id": "2024010",
+            "date_start": "2024-06-22T00:30:00Z",
+            "game_number": 10,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 3,
+            "game_id": "2024011",
+            "date_start": "2024-06-22T23:00:00Z",
+            "game_number": 11,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 3,
+            "game_id": "2024012",
+            "date_start": "2024-06-23T23:00:00Z",
+            "game_number": 12,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 4,
+            "game_id": "2024013",
+            "date_start": "2024-06-28T02:00:00Z",
+            "game_number": 13,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 4,
+            "game_id": "2024014",
+            "date_start": "2024-06-28T23:30:00Z",
+            "game_number": 14,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 4,
+            "game_id": "2024015",
+            "date_start": "2024-06-29T23:00:00Z",
+            "game_number": 15,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 4,
+            "game_id": "2024016",
+            "date_start": "2024-06-30T23:00:00Z",
+            "game_number": 16,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024017",
+            "date_start": "2024-07-05T01:00:00Z",
+            "game_number": 17,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024018",
+            "date_start": "2024-07-06T00:30:00Z",
+            "game_number": 18,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024019",
+            "date_start": "2024-07-06T23:00:00Z",
+            "game_number": 19,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024020",
+            "date_start": "2024-07-07T23:00:00Z",
+            "game_number": 20,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 6,
+            "game_id": "2024021",
+            "date_start": "2024-07-11T23:30:00Z",
+            "game_number": 21,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 6,
+            "game_id": "2024022",
+            "date_start": "2024-07-13T00:30:00Z",
+            "game_number": 22,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 6,
+            "game_id": "2024023",
+            "date_start": "2024-07-13T23:00:00Z",
+            "game_number": 23,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 6,
+            "game_id": "2024024",
+            "date_start": "2024-07-14T23:00:00Z",
+            "game_number": 24,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 7,
+            "game_id": "2024025",
+            "date_start": "2024-07-19T23:00:00Z",
+            "game_number": 25,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 7,
+            "game_id": "2024026",
+            "date_start": "2024-07-20T01:30:00Z",
+            "game_number": 26,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 7,
+            "game_id": "2024027",
+            "date_start": "2024-07-20T23:00:00Z",
+            "game_number": 27,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 7,
+            "game_id": "2024028",
+            "date_start": "2024-07-21T23:00:00Z",
+            "game_number": 28,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 8,
+            "game_id": "2024029",
+            "date_start": "2024-07-25T23:30:00Z",
+            "game_number": 29,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 8,
+            "game_id": "2024030",
+            "date_start": "2024-07-26T23:30:00Z",
+            "game_number": 30,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 8,
+            "game_id": "2024031",
+            "date_start": "2024-07-27T23:00:00Z",
+            "game_number": 31,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 8,
+            "game_id": "2024032",
+            "date_start": "2024-07-28T23:00:00Z",
+            "game_number": 32,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 9,
+            "game_id": "2024033",
+            "date_start": "2024-08-02T00:30:00Z",
+            "game_number": 33,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 9,
+            "game_id": "2024034",
+            "date_start": "2024-08-02T23:30:00Z",
+            "game_number": 34,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 9,
+            "game_id": "2024035",
+            "date_start": "2024-08-03T23:00:00Z",
+            "game_number": 35,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 9,
+            "game_id": "2024036",
+            "date_start": "2024-08-04T23:00:00Z",
+            "game_number": 36,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 10,
+            "game_id": "2024037",
+            "date_start": "2024-08-08T23:30:00Z",
+            "game_number": 37,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 10,
+            "game_id": "2024038",
+            "date_start": "2024-08-09T23:30:00Z",
+            "game_number": 38,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 10,
+            "game_id": "2024039",
+            "date_start": "2024-08-10T23:00:00Z",
+            "game_number": 39,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 10,
+            "game_id": "2024040",
+            "date_start": "2024-08-11T23:00:00Z",
+            "game_number": 40,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 11,
+            "game_id": "2024041",
+            "date_start": "2024-08-16T01:00:00Z",
+            "game_number": 41,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 11,
+            "game_id": "2024042",
+            "date_start": "2024-08-17T01:00:00Z",
+            "game_number": 42,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 11,
+            "game_id": "2024043",
+            "date_start": "2024-08-17T23:00:00Z",
+            "game_number": 43,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 11,
+            "game_id": "2024044",
+            "date_start": "2024-08-18T23:00:00Z",
+            "game_number": 44,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 12,
+            "game_id": "2024045",
+            "date_start": "2024-08-22T23:30:00Z",
+            "game_number": 45,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 12,
+            "game_id": "2024046",
+            "date_start": "2024-08-24T00:30:00Z",
+            "game_number": 46,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 12,
+            "game_id": "2024047",
+            "date_start": "2024-08-24T23:00:00Z",
+            "game_number": 47,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 12,
+            "game_id": "2024048",
+            "date_start": "2024-08-25T23:00:00Z",
+            "game_number": 48,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 13,
+            "game_id": "2024049",
+            "date_start": "2024-08-31T23:00:00Z",
+            "game_number": 49,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 13,
+            "game_id": "2024050",
+            "date_start": "2024-09-01T23:00:00Z",
+            "game_number": 50,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 13,
+            "game_id": "2024051",
+            "date_start": "2024-09-02T18:30:00Z",
+            "game_number": 51,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 13,
+            "game_id": "2024052",
+            "date_start": "2024-09-02T22:00:00Z",
+            "game_number": 52,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 14,
+            "game_id": "2024053",
+            "date_start": "2024-09-06T23:30:00Z",
+            "game_number": 53,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 14,
+            "game_id": "2024054",
+            "date_start": "2024-09-07T17:00:00Z",
+            "game_number": 54,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 14,
+            "game_id": "2024055",
+            "date_start": "2024-09-07T20:00:00Z",
+            "game_number": 55,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 14,
+            "game_id": "2024056",
+            "date_start": "2024-09-07T23:00:00Z",
+            "game_number": 56,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024057",
+            "date_start": "2024-09-14T02:00:00Z",
+            "game_number": 57,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024058",
+            "date_start": "2024-09-14T20:00:00Z",
+            "game_number": 58,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024059",
+            "date_start": "2024-09-14T23:00:00Z",
+            "game_number": 59,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 16,
+            "game_id": "2024060",
+            "date_start": "2024-09-20T23:00:00Z",
+            "game_number": 60,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 16,
+            "game_id": "2024061",
+            "date_start": "2024-09-21T01:30:00Z",
+            "game_number": 61,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 16,
+            "game_id": "2024062",
+            "date_start": "2024-09-21T20:00:00Z",
+            "game_number": 62,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 16,
+            "game_id": "2024063",
+            "date_start": "2024-09-21T23:00:00Z",
+            "game_number": 63,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 17,
+            "game_id": "2024064",
+            "date_start": "2024-09-28T00:00:00Z",
+            "game_number": 64,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 17,
+            "game_id": "2024065",
+            "date_start": "2024-09-28T02:30:00Z",
+            "game_number": 65,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 17,
+            "game_id": "2024066",
+            "date_start": "2024-09-28T20:00:00Z",
+            "game_number": 66,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 17,
+            "game_id": "2024067",
+            "date_start": "2024-09-28T23:00:00Z",
+            "game_number": 67,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 18,
+            "game_id": "2024068",
+            "date_start": "2024-10-04T23:00:00Z",
+            "game_number": 68,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 18,
+            "game_id": "2024069",
+            "date_start": "2024-10-05T02:00:00Z",
+            "game_number": 69,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 18,
+            "game_id": "2024070",
+            "date_start": "2024-10-05T23:00:00Z",
+            "game_number": 70,
+            "game_type": "regular",
+            "away": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 19,
+            "game_id": "2024071",
+            "date_start": "2024-10-12T00:30:00Z",
+            "game_number": 71,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 19,
+            "game_id": "2024072",
+            "date_start": "2024-10-12T20:00:00Z",
+            "game_number": 72,
+            "game_type": "regular",
+            "away": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 19,
+            "game_id": "2024073",
+            "date_start": "2024-10-12T23:00:00Z",
+            "game_number": 73,
+            "game_type": "regular",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 19,
+            "game_id": "2024074",
+            "date_start": "2024-10-14T17:00:00Z",
+            "game_number": 74,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 20,
+            "game_id": "2024075",
+            "date_start": "2024-10-18T23:00:00Z",
+            "game_number": 75,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 20,
+            "game_id": "2024076",
+            "date_start": "2024-10-19T20:00:00Z",
+            "game_number": 76,
+            "game_type": "regular",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 20,
+            "game_id": "2024077",
+            "date_start": "2024-10-19T23:00:00Z",
+            "game_number": 77,
+            "game_type": "regular",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 21,
+            "game_id": "2024078",
+            "date_start": "2024-10-25T23:00:00Z",
+            "game_number": 78,
+            "game_type": "regular",
+            "away": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "home": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 21,
+            "game_id": "2024079",
+            "date_start": "2024-10-26T01:30:00Z",
+            "game_number": 79,
+            "game_type": "regular",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Edmonton",
+                "name": "Elks",
+                "abbr": "EDM"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 21,
+            "game_id": "2024080",
+            "date_start": "2024-10-26T20:00:00Z",
+            "game_number": 80,
+            "game_type": "regular",
+            "away": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            }
+        },
+        {
+            "year": 2024,
+            "week": 21,
+            "game_id": "2024081",
+            "date_start": "2024-10-26T23:00:00Z",
+            "game_number": 81,
+            "game_type": "regular",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            }
+        }
+    ]
+}

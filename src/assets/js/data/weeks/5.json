@@ -1,0 +1,127 @@
+{
+    "year": 2024,
+    "week": 5,
+    "date_updated": "2024-07-08T02:12:04.493265068Z",
+    "games": [
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024017",
+            "date_start": "2024-07-05T01:00:00Z",
+            "date_updated": "2024-07-05T04:12:03.492861989Z",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "Saskatchewan",
+                "name": "Roughriders",
+                "abbr": "SSK"
+            },
+            "away_score": 23,
+            "home_score": 30,
+            "winner": "home",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024018",
+            "date_start": "2024-07-06T00:30:00Z",
+            "date_updated": "2024-07-06T03:36:02.812478656Z",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Winnipeg",
+                "name": "Blue Bombers",
+                "abbr": "WPG"
+            },
+            "away_score": 16,
+            "home_score": 25,
+            "winner": "home",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024019",
+            "date_start": "2024-07-06T23:00:00Z",
+            "date_updated": "2024-07-07T02:00:04.587942747Z",
+            "away": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "home": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "away_score": 26,
+            "home_score": 30,
+            "winner": "home",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        },
+        {
+            "year": 2024,
+            "week": 5,
+            "game_id": "2024020",
+            "date_start": "2024-07-07T23:00:00Z",
+            "date_updated": "2024-07-08T02:12:04.493265068Z",
+            "away": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "away_score": 44,
+            "home_score": 28,
+            "winner": "away",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        }
+    ]
+}

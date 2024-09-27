@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="stylesheet" href="assets/css/styles.css">
+
+    <script type="module" src="assets/js/index.js"></script>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #loading h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+
+        #standings {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        #west,
+        #east {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+
+        @media (min-width: 600px) {
+            #standings {
+                flex-direction: row;
+                /* align to top */
+                align-items: flex-start;
+            }
+
+            #west {
+                padding-right: 1rem;
+                border-right: 1px solid black;
+            }
+
+            #east {
+                padding-left: 1rem;
+            }
+        }
+
+
+        #west h4,
+        #east h4 {
+            font-size: 1.5rem;
+        }
+
+        #west table,
+        #east table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #west table th,
+        #east table th {
+            border-bottom: 1px solid black;
+        }
+
+        #west table td,
+        #east table td {
+            border-bottom: 1px solid black;
+            padding: 0.5rem;
+        }
+
+        #west table td:first-child,
+        #east table td:first-child {
+            text-align: left;
+        }
+
+        #west table td:last-child,
+        #east table td:last-child {
+            text-align: right;
+        }
+
+        #future-games {
+            width: 100%;
+            text-align: center;
+        }
+
+        #future-games table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container hidden">
+        <h1>CFL Playoff Machine - <span id="season"></span> edition</h1>
+
+        <section id="standings">
+            <div id="west">
+                <h3>West</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="east">
+                <h3>East</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="future-games">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Home</th>
+                        <th>Away</th>
+                        <th>Winner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+
+</body>
+
+<script type="text/javascript">
+</script>
+
+<script type="module">
+    import { loadData, calculateStandings } from './assets/js/index.js';
+
+    let games = null;
+
+    function writeDivisionStandings(division, table) {
+        // clear current standings
+        table.innerHTML = '';
+
+        division.forEach(team => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${team.name}</td>
+                <td>${team.wins}</td>
+                <td>${team.losses}</td>
+                <td>${team.ties}</td>
+                <td>${team.standingsPoints}</td>
+            `;
+
+            table.appendChild(row);
+        });
+    }
+
+
+    function renderStandings() {
+        const standings = calculateStandings(Object.values(games));
+
+        const west = document.getElementById('west');
+        const east = document.getElementById('east');
+
+        const westTable = west.querySelector('table tbody');
+        const eastTable = east.querySelector('table tbody');
+
+        writeDivisionStandings(standings.west, westTable);
+        writeDivisionStandings(standings.east, eastTable);
+    }
+
+
+    function forecastResult(gameId, winner) {
+        console.log(`Game ${gameId} forecasted winner: ${winner}`);
+
+        games[gameId].winner = winner;
+
+        renderStandings();
+    }
+
+
+    async function main() {
+        const data = await loadData();
+
+        console.debug(data);
+
+        const season = document.getElementById('season');
+        season.textContent = data.season;
+
+        games = data.games;
+
+        renderStandings()
+
+        const futureGames = document.getElementById('future-games').querySelector('table tbody');
+
+        Object.values(games).forEach(game => {
+            if (!game.future) {
+                return;
+            }
+
+            const row = document.createElement('tr');
+            // radio group in the last column - home, away, tie
+            // on change, call forecastResult
+            row.innerHTML = `
+                <td>${game.date}</td>
+                <td>${game.home}</td>
+                <td>${game.away}</td>
+                <td>
+                    <input type="radio" name="${game.id}" value="${game.home}" onchange="forecastResult(${game.id}, '${game.home}')"> ${game.home}
+                    <input type="radio" name="${game.id}" value="${game.away}" onchange="forecastResult(${game.id}, '${game.away}')"> ${game.away}
+                    <input type="radio" name="${game.id}" value="tie" onchange="forecastResult(${game.id}, 'tie')"> Tie
+                </td>
+            `;
+
+            futureGames.appendChild(row);
+        });
+    }
+
+    main();
+    window.forecastResult = forecastResult;
+
+</script>
+
+</html>
