@@ -5,111 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <script type="module" src="assets/js/index.js"></script>
 
     <style>
-        .hidden {
-            display: none;
-        }
-
-        #loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        #loading h1 {
-            font-size: 2rem;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-
-        #standings {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        #west,
-        #east {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-        }
-
-        @media (min-width: 600px) {
-            #standings {
-                flex-direction: row;
-                /* align to top */
-                align-items: flex-start;
-            }
-
-            #west {
-                padding-right: 1rem;
-                border-right: 1px solid black;
-            }
-
-            #east {
-                padding-left: 1rem;
-            }
-        }
-
-
-        #west h4,
-        #east h4 {
-            font-size: 1.5rem;
-        }
-
-        #west table,
-        #east table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        #west table th,
-        #east table th {
-            border-bottom: 1px solid black;
-        }
-
-        #west table td,
-        #east table td {
-            border-bottom: 1px solid black;
-            padding: 0.5rem;
-        }
-
-        #west table td:first-child,
-        #east table td:first-child {
-            text-align: left;
-        }
-
-        #west table td:last-child,
-        #east table td:last-child {
-            text-align: right;
-        }
-
-        #future-games {
-            width: 100%;
-            text-align: center;
-        }
-
-        #future-games table {
-            width: 100%;
-            border-collapse: collapse;
-        }
     </style>
 
 
@@ -118,6 +18,7 @@
 <body>
     <div class="container hidden">
         <h1>CFL Playoff Machine - <span id="season"></span> edition</h1>
+        <button type="button" onclick="reset()">Reset</button>
 
         <section id="standings">
             <div id="west">
@@ -164,7 +65,7 @@
                         <th>Date</th>
                         <th>Home</th>
                         <th>Away</th>
-                        <th>Winner</th>
+                        <th>Scenario Winner</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -225,6 +126,17 @@
         renderStandings();
     }
 
+    function reset() {
+        Object.values(games).forEach(game => {
+            if (!game.future) {
+                return;
+            }
+            game.winner = null;
+        });
+
+        renderStandings();
+    }
+
 
     async function main() {
         const data = await loadData();
@@ -253,9 +165,9 @@
                 <td>${game.home}</td>
                 <td>${game.away}</td>
                 <td>
-                    <input type="radio" name="${game.id}" value="${game.home}" onchange="forecastResult(${game.id}, '${game.home}')"> ${game.home}
-                    <input type="radio" name="${game.id}" value="${game.away}" onchange="forecastResult(${game.id}, '${game.away}')"> ${game.away}
-                    <input type="radio" name="${game.id}" value="tie" onchange="forecastResult(${game.id}, 'tie')"> Tie
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.home}" onchange="forecastResult(${game.id}, '${game.home}')"> ${game.home}</span>
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.away}" onchange="forecastResult(${game.id}, '${game.away}')"> ${game.away}</span>
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="tie" onchange="forecastResult(${game.id}, 'tie')"> Tie</span>
                 </td>
             `;
 
@@ -265,6 +177,7 @@
 
     main();
     window.forecastResult = forecastResult;
+    window.reset = reset;
 
 </script>
 
