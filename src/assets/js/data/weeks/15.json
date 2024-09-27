@@ -1,0 +1,97 @@
+{
+    "year": 2024,
+    "week": 15,
+    "date_updated": "2024-09-15T02:12:08.945538943Z",
+    "games": [
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024057",
+            "date_start": "2024-09-14T02:00:00Z",
+            "date_updated": "2024-09-14T05:00:08.030976625Z",
+            "away": {
+                "location": "Toronto",
+                "name": "Argonauts",
+                "abbr": "TOR"
+            },
+            "home": {
+                "location": "BC",
+                "name": "Lions",
+                "abbr": "BC"
+            },
+            "away_score": 33,
+            "home_score": 17,
+            "winner": "away",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        },
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024058",
+            "date_start": "2024-09-14T19:00:00Z",
+            "date_updated": "2024-09-14T22:24:08.929395349Z",
+            "away": {
+                "location": "Ottawa",
+                "name": "REDBLACKS",
+                "abbr": "OTT"
+            },
+            "home": {
+                "location": "Hamilton",
+                "name": "Tiger-Cats",
+                "abbr": "HAM"
+            },
+            "away_score": 21,
+            "home_score": 37,
+            "winner": "home",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        },
+        {
+            "year": 2024,
+            "week": 15,
+            "game_id": "2024059",
+            "date_start": "2024-09-14T23:00:00Z",
+            "date_updated": "2024-09-15T02:12:08.945538943Z",
+            "away": {
+                "location": "Montreal",
+                "name": "Alouettes",
+                "abbr": "MTL"
+            },
+            "home": {
+                "location": "Calgary",
+                "name": "Stampeders",
+                "abbr": "CGY"
+            },
+            "away_score": 19,
+            "home_score": 19,
+            "winner": "tie",
+            "game_status": {
+                "status_id": "final",
+                "is_active": false,
+                "has_started": true,
+                "quarter": 0,
+                "minutes": 0,
+                "seconds": 0,
+                "down": 0,
+                "yards_to_go": 0
+            }
+        }
+    ]
+}
