@@ -16,7 +16,7 @@ const eastTeams = ["HAM", "MTL", "OTT", "TOR"]
 
 
 export const loadData = async () => {
-    const response = await fetch('/assets/js/data/schedule.json');
+    const response = await fetch('assets/js/data/schedule.json');
 
     const schedule = await response.json();
 
@@ -25,7 +25,7 @@ export const loadData = async () => {
     const games = [];
 
     for (const weekNumber of weekNumbers) {
-        const response = await fetch(`/assets/js/data/weeks/${weekNumber}.json`);
+        const response = await fetch(`assets/js/data/weeks/${weekNumber}.json`);
 
         // skip if week data is not available
         if (!response.ok) {
