@@ -21,7 +21,19 @@
     </div>
 
     <div class="container hidden">
-        <h1>CFL Playoff Machine - <span id="season"></span> edition</h1>
+        <header>
+            <h1>CFL Playoff Machine - <span id="season"></span> edition</h1>
+            <h3>Share this scenario
+                <button type="button" class="plain" onclick="copyShare()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>share-variant</title>
+                        <path
+                            d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+                    </svg>
+                </button>
+
+            </h3>
+        </header>
 
         <section id="standings">
             <div id="west">
@@ -30,6 +42,7 @@
                     <thead>
                         <tr>
                             <th>Team</th>
+                            <th>GP</th>
                             <th>W</th>
                             <th>L</th>
                             <th>T</th>
@@ -48,6 +61,7 @@
                     <thead>
                         <tr>
                             <th>Team</th>
+                            <th>GP</th>
                             <th>W</th>
                             <th>L</th>
                             <th>T</th>
@@ -95,7 +109,7 @@
 </script>
 
 <script type="module">
-    import { loadData, calculateStandings } from './assets/js/index.js';
+    import { loadData, calculateStandings, getLink } from './assets/js/index.js';
 
     let games = null;
 
@@ -116,6 +130,7 @@
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class='${teamClass}'>${prefix}${team.name}</td>
+                <td>${team.gamesPlayed}</td>
                 <td>${team.wins}</td>
                 <td>${team.losses}</td>
                 <td>${team.ties}</td>
@@ -168,7 +183,9 @@
 
 
     async function main() {
-        const data = await loadData();
+        const params = new URLSearchParams(window.location.search);
+
+        const data = await loadData(params);
 
         const loading = document.getElementById('loading');
         loading.classList.add('hidden');
@@ -193,14 +210,18 @@
             const row = document.createElement('tr');
             // radio group in the last column - home, away, tie
             // on change, call forecastResult
+            const homeChecked = game.winner == game.home ? 'checked' : '';
+            const awayChecked = game.winner == game.away ? 'checked' : '';
+            const tieChecked = game.winner == 'tie' ? 'checked' : '';
+
             row.innerHTML = `
                 <td>${game.date}</td>
                 <td>${game.home}</td>
                 <td>${game.away}</td>
                 <td>
-                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.home}" onchange="forecastResult(${game.id}, '${game.home}')"> ${game.home}</span>
-                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.away}" onchange="forecastResult(${game.id}, '${game.away}')"> ${game.away}</span>
-                    <span class='forecast-team'><input type="radio" name="${game.id}" value="tie" onchange="forecastResult(${game.id}, 'tie')"> Tie</span>
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.home}" ${homeChecked} onchange="forecastResult(${game.id}, '${game.home}')"> ${game.home}</span>
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="${game.away}" ${awayChecked} onchange="forecastResult(${game.id}, '${game.away}')"> ${game.away}</span>
+                    <span class='forecast-team'><input type="radio" name="${game.id}" value="tie" ${tieChecked} onchange="forecastResult(${game.id}, 'tie')"> Tie</span>
                 </td>
             `;
 
@@ -208,9 +229,26 @@
         });
     }
 
+    function copyShare() {
+        const params = getLink(games);
+
+        // route to current page with params
+        const link = `${window.location.origin}${window.location.pathname}?${params}`;
+
+        // change the url to the new link
+        window.history.pushState({}, '', link);
+
+        navigator.clipboard.writeText(link).then(function () {
+            alert('Link copied to clipboard');
+        }, function (err) {
+            alert('Could not copy text (but you can copy the current browser URL instead now)', err);
+        });
+    }
+
     main();
     window.forecastResult = forecastResult;
     window.reset = reset;
+    window.copyShare = copyShare;
 
 </script>
 

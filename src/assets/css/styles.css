@@ -7,8 +7,30 @@ body {
     background-color: var(--offwhite);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h3 svg {
+        height: 1.5rem;
+        margin-bottom: -0.4rem;
+    }
+}
+
 section {
     padding-bottom: 2rem;
+}
+
+button.plain {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 #loading {

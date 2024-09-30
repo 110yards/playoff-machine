@@ -1,21 +1,18 @@
 
-// const teams = {
-//     "BC": { name: "BC", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "CGY": { name: "CGY", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "EDM": { name: "EDM", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "HAM": { name: "HAM", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "MTL": { name: "MTL", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "OTT": { name: "OTT", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "SSK": { name: "SSK", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "TOR": { name: "TOR", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-//     "WPG": { name: "WPG", wins: 0, losses: 0, ties: 0, pointsFor: 0, pointsAgainst: 0, standingsPoints: 0 },
-// }
 
 const westTeams = ["BC", "CGY", "EDM", "SSK", "WPG"]
 const eastTeams = ["HAM", "MTL", "OTT", "TOR"]
 
+/**
+ * 
+ * @param {URLSearchParams} params 
+ * @returns 
+ */
+export const loadData = async (params) => {
+    console.debug(params)
 
-export const loadData = async () => {
+    const futureWinners = Object.fromEntries(params.entries())
+
     const response = await fetch('assets/js/data/schedule.json');
 
     const schedule = await response.json();
@@ -41,6 +38,7 @@ export const loadData = async () => {
 
             // add future games from schedule
             let gamesForWeek = schedule.games.filter(game => game.week === weekNumber);
+
             gamesForWeek = gamesForWeek.map(game => ({
                 id: game.game_id,
                 date: new Date(game.date_start).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }),
@@ -48,7 +46,7 @@ export const loadData = async () => {
                 homeScore: null,
                 away: game.away.abbr,
                 awayScore: null,
-                winner: null,
+                winner: futureWinners[game.game_id] ?? null,
                 future: true,
             }));
 
@@ -110,6 +108,7 @@ export const calculateStandings = (games) => {
 
     const teams = allTeams.map(team => ({
         name: team,
+        gamesPlayed: 0,
         wins: 0,
         losses: 0,
         ties: 0,
@@ -164,6 +163,9 @@ export const calculateStandings = (games) => {
             }
         }
 
+        teams[home].gamesPlayed += 1
+        teams[away].gamesPlayed += 1
+
         teams[home].standingsPoints = calcStandingsPoints(teams[home])
         teams[away].standingsPoints = calcStandingsPoints(teams[away])
     }
@@ -198,4 +200,19 @@ export const calculateStandings = (games) => {
         east,
     }
 
+}
+
+export const getLink = (games) => {
+    let params = ""
+
+    // for each game, add the winner to the params
+    for (const game of Object.values(games)) {
+        if (!game.future) {
+            continue
+        }
+
+        params += `${game.id}=${game.winner}&`
+    }
+
+    return params
 }
