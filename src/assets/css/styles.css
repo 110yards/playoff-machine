@@ -11,15 +11,11 @@ section {
     padding-bottom: 2rem;
 }
 
-
-.hidden {
-    display: none;
-}
-
 #loading {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
     background-color: #f0f0f0;
 }
@@ -36,6 +32,9 @@ section {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none !important;
+}
 
 #standings {
     display: flex;
@@ -126,4 +125,8 @@ section {
     display: inline-block;
     text-align: left;
     width: 5rem;
+}
+
+.playoffs {
+    font-weight: bold;
 }

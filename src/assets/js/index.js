@@ -172,7 +172,9 @@ export const calculateStandings = (games) => {
     const east = eastTeams.map(team => teams[team]).sort((a, b) => b.standingsPoints - a.standingsPoints)
 
     west[0].divisionWinner = true
+    west[0].makesPlayoffs = true
     east[0].divisionWinner = true
+    east[0].makesPlayoffs = true
 
     // second teams make it
     west[1].makesPlayoffs = true

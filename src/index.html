@@ -16,9 +16,12 @@
 </head>
 
 <body>
+    <div id="loading">
+        <h1>Loading...</h1>
+    </div>
+
     <div class="container hidden">
         <h1>CFL Playoff Machine - <span id="season"></span> edition</h1>
-        <button type="button" onclick="reset()">Reset</button>
 
         <section id="standings">
             <div id="west">
@@ -58,6 +61,15 @@
             </div>
         </section>
 
+        <section id="legend">
+            <h3>Legend</h3>
+            <ul>
+                <li>y- Division Leader</span></li>
+                <li>x- Playoff Position</span></li>
+                <li>c- Crossover</span></li>
+            </ul>
+        </section>
+
         <section id="future-games">
             <table>
                 <thead>
@@ -65,7 +77,9 @@
                         <th>Date</th>
                         <th>Home</th>
                         <th>Away</th>
-                        <th>Scenario Winner</th>
+                        <th>Scenario Winner
+                            <button type="button" onclick="reset()">Reset</button>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -90,9 +104,18 @@
         table.innerHTML = '';
 
         division.forEach(team => {
+
+            let prefix = "";
+
+            if (team.makesPlayoffs) prefix = "x-"
+            if (team.divisionWinner) prefix = "y-"
+            if (team.isCrossover) prefix = "c-"
+
+            const teamClass = team.makesPlayoffs ? "playoffs" : "";
+
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${team.name}</td>
+                <td class='${teamClass}'>${prefix}${team.name}</td>
                 <td>${team.wins}</td>
                 <td>${team.losses}</td>
                 <td>${team.ties}</td>
@@ -134,6 +157,12 @@
             game.winner = null;
         });
 
+        // clear radio buttons
+        const radios = document.querySelectorAll('input[type="radio"]');
+        radios.forEach(radio => {
+            radio.checked = false;
+        });
+
         renderStandings();
     }
 
@@ -141,7 +170,11 @@
     async function main() {
         const data = await loadData();
 
-        console.debug(data);
+        const loading = document.getElementById('loading');
+        loading.classList.add('hidden');
+
+        const container = document.querySelector('.container');
+        container.classList.remove('hidden');
 
         const season = document.getElementById('season');
         season.textContent = data.season;
