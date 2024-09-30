@@ -178,6 +178,9 @@
             radio.checked = false;
         });
 
+        // remove the query string
+        window.history.pushState({}, '', window.location.pathname);
+
         renderStandings();
     }
 
