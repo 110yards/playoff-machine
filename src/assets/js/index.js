@@ -116,6 +116,9 @@ export const calculateStandings = (games) => {
         pointsFor: 0,
         pointsAgainst: 0,
         standingsPoints: 0,
+        divisionWinner: false,
+        makesPlayoffs: false,
+        isCrossover: false
     })).reduce((acc, team) => {
         acc[team.name] = team
         return acc
@@ -167,6 +170,26 @@ export const calculateStandings = (games) => {
 
     const west = westTeams.map(team => teams[team]).sort((a, b) => b.standingsPoints - a.standingsPoints)
     const east = eastTeams.map(team => teams[team]).sort((a, b) => b.standingsPoints - a.standingsPoints)
+
+    west[0].divisionWinner = true
+    east[0].divisionWinner = true
+
+    // second teams make it
+    west[1].makesPlayoffs = true
+    east[1].makesPlayoffs = true
+
+    // assume no crossover first
+    west[2].makesPlayoffs = true
+    east[2].makesPlayoffs = true
+
+    // if 4th in one division has more points than 3rd in the other, then crossover
+    if (west[3].standingsPoints > east[2].standingsPoints) {
+        west[3].isCrossover = true
+        east[2].makesPlayoffs = false
+    } else if (east[3].standingsPoints > west[2].standingsPoints) {
+        east[3].isCrossover = true
+        west[2].makesPlayoffs = false
+    }
 
     return {
         west,
