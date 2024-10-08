@@ -163,8 +163,12 @@ export const calculateStandings = (games) => {
             }
         }
 
-        teams[home].gamesPlayed += 1
-        teams[away].gamesPlayed += 1
+
+        if (!!game.winner) {
+            teams[home].gamesPlayed += 1
+            teams[away].gamesPlayed += 1
+        }
+
 
         teams[home].standingsPoints = calcStandingsPoints(teams[home])
         teams[away].standingsPoints = calcStandingsPoints(teams[away])
@@ -215,4 +219,13 @@ export const getLink = (games) => {
     }
 
     return params
+}
+
+const breakTies = (tiedTeams, games) => {
+    // 1. winning percentage in games against tied teams
+    // 2. higher point differential in games against tied teams
+    // there are more but that should be good enough
+    // if any team is eliminated, remove from tiedTeams and revert to step 1
+
+
 }
